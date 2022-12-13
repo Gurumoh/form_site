@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/2f82bd71dd.js" crossorigin="anonymous"></script>
+    <title>APPLICATION FORM</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <!-- <li class="menu"><a href="#" id="menu">Menu</a></li> -->
+                <span id="container">
+                    <div class="div-one"></div>
+                    <div class="div-two"></div>
+                    <div class="div-three"></div>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1- Wanna use select tag under "Level"
+    2- Wanna use "Input" with "checkmark" on while submitting -->
+
+    <!-- <select name="select" id="select">
+        <option value="option">Nigeria</option>
+        <option value="canada">Canada</option>
+
+    </select> -->
+    <h1 class="form-header">Hostel Application Form</h1>
+    <form action="application form" class="application-form">
+
+        
+        <div class="surname">
+            <label for="text" class="surname-label">Surname:</label>
+            <input type="text" placeholder="" class="surname-input" class="input">
+        </div>
+        
+        <div class="surname">
+            <label for="text" class="surname-label">First Name:</label>
+            <input type="text" placeholder="" class="firstname-input">
+        </div>
+
+        <div class="surname">
+            <label for="text" class="surname-label">Last Name:</label>
+            <input type="text" placeholder="" class="lastname-input">
+        </div>
+
+        <div class="surname">
+            <label for="email" class="surname-label">Email:</label>
+            <input type="email" placeholder="" class="email-input">
+        </div>
+
+        <div class="surname">
+            <label for="text" class="surname-label">Phone No:</label>
+            <input type="text" placeholder="" class="phone-input">
+        </div>
+
+        <div class="surname">
+            <label for="tel" class="surname-label">Admission No:</label>
+            <input type="tel" placeholder="" class="admission-input">
+        </div>
+
+        <div class="surname">
+            <label for="text" class="surname-label">Course:</label>
+            <input type="text" placeholder="" class="course-input">
+        </div>
+        <div class="surname" >
+            <label for="text" class="surname-label">Level:</label>
+            <!-- <input type="text" placeholder="" class="level-input"> -->
+            <select name="level" class="level" id="level">
+                <option value="select">Select</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+            </select>
+        </div>
+
+        <div class="surname">
+            <label for="email" class="reason-label" id="reason-label">Why do you need a hostel?</label>
+            <textarea name="Reason" class="reason" id="reason" cols="30" rows="10" placeholder="Reason..."></textarea>
+
+        </div>
+
+        <button class="button">Submit</button>
+        
+        
+    </form>
+
+    <style>
+        #container{
+            margin-bottom: 10px;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            cursor: pointer;
+        }
+        .div-one{
+            border-style: solid;
+            margin-bottom: 5px;
+            width: 22px;
+            color: white;
+            border-width: 2px;
+        }
+        .div-two{
+            border-style: solid;
+            margin-bottom: 5px;
+            width: 22px;
+            color: white;
+            border-width: 2px;
+            
+        }
+        .div-three{
+            border-style: solid;
+            width: 22px;
+            color: white;
+            border-width: 2px;
+        }
+        @media (min-width: 600px) {
+            .form-header{
+                text-transform: uppercase;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                margin-left: 40px;
+                text-align: center;
+                font-style: solid;
+                font-size: 25px;
+                font-weight: 1px;
+                color: rgb(5, 0, 0);
+            }
+            .application-form{
+                /* margin-left: 100px; */
+                text-align: center;
+            }
+            .surname-input{
+                width: 400px;
+            
+            }
+            .firstname-input{
+                width: 400px;
+            }
+            .lastname-input{
+                width: 400px;
+            }
+            .email-input{
+                width: 400px;
+            }
+            .phone-input{
+                width: 400px;
+            }
+            .admission-input{
+                width: 400px;
+            }
+            .course-input{
+                width: 400px;
+            }
+            #level{
+                width: 400px;
+            }
+            #reason-label{
+                margin-left: -30px;
+                margin-top: 40px;
+            }
+            #reason{
+                min-width: 230px;
+                max-width: 230px;
+                max-height: 100px;
+                min-height: 100px;
+                border-radius: 4px;
+                margin-top: 8px;
+                margin-left: -30px;
+                outline: none;
+                font-size: 18px;
+                padding: 5px;
+            }
+            .button{
+                margin-left: -150px;
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+        
+           
+        }
+
+        button{
+            width: 100px;
+            height: 40px;
+            margin-left: 170px;
+            border-radius: 4px;
+            border: none;
+            background: rgb(87, 34, 34);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: solid;
+            font-size: 18px;
+        }
+        button:hover{
+            cursor: pointer;
+
+
+        }
+        button:active{
+            font-style: solid;
+            width: 50px;
+            height: 20px;
+            font-size: 9px;
+            margin-left: 200px;
+            transition: 0.05s;
+
+        }
+        body{
+            background-color: rgb(175, 169, 169);
+        }
+        form{
+            margin: 10px;
+            padding-top: 0px;
+            padding-left: 10px;
+            /* background: rgb(236, 135, 135); */
+        }
+        .surname{
+            margin-bottom: 20px;
+        }
+        .surname-input{
+            margin-left: 65px;
+        }
+        .firstname-input{
+            margin-left: 38px;
+        }
+        .lastname-input{
+            margin-left: 47px;
+        }
+        .email-input{
+            margin-left: 83px;
+        }
+        .phone-input{
+            margin-left: 56px;
+        }
+        .admission-input{
+            margin-left: 20px;
+        }
+        .course-input{
+            margin-left: 74px;
+        }
+        .level{
+            margin-left: 83px;
+            font-size: 18px;
+            background-color: rgb(230, 222, 222);
+            border: solid;
+            border-radius: 3px;
+            border-width: 1px;
+            width: 300px;
+            outline: none;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        #level:focus{
+            background-color: lightblue;
+            border: none;
+            border-color: black;
+        }
+        #level::placeholder{
+            margin: 20px;
+            padding: 20px;
+        }
+        input{
+            font-size: 18px;
+            background-color: rgb(230, 222, 222);
+            border: solid;
+            border-radius: 3px;
+            border-width: 1px;
+            width: 300px;
+            outline: none;
+            padding: 5px;
+            box-sizing: border-box;
+            
+
+        }
+        input::content{
+            font-size: 1px;
+        }
+        input:focus{
+            background-color: lightblue;
+            border: none;
+            border-color: black;
+            
+        }
+        input::placeholder{
+            margin: 20px;
+            padding: 20px;
+        }
+        label{
+            font-size: 15px;
+            text-transform: capitalize;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: rgb(87, 34, 34);
+        }
+        .reason-label{
+            font-size: 15px;
+            display: block;
+        }
+        .reason{
+            min-width: 445px;
+            max-width: 445px;
+            max-height: 50px;
+            min-height: 50px;
+            border-radius: 4px;
+            margin-top: 8px;
+            outline: none;
+            font-size: 18px;
+            padding: 5px;
+
+        }
+        #reason:focus{
+            background-color: lightblue;
+            border: none;
+            border-color: black;
+        }
+        #reason::placeholder{
+            font-size: 15px;
+            
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-header{
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-left: 40px;
+            font-style: solid;
+            font-size: 25px;
+            font-weight: 1px;
+            color: rgb(5, 0, 0);
+            
+            
+            
+        }
+        header{
+            background: rgb(105, 41, 41);
+            
+            
+
+        }
+
+        ul{
+            padding: 15px;
+        }
+        li{
+            display: inline-block;
+        
+        }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        .menu{
+            float: right;
+            list-style: none;
+        }
+        #menu{
+            
+        }
+
+    </style>
+
+
+
+
+
+
+</body>
+</html>
